@@ -4,6 +4,38 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fefcf9;
 }
+header{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0c897;
+}
+nav{
+    margin-top: 10px;
+}
+.main-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f5bd26;
+}
+.main-nav li{
+    margin: 0 15px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.1rem;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #F9F1DC; 
+}
 
 section {
     display: flex;
@@ -64,6 +96,39 @@ p {
     padding: 0 20px;
     line-height: 1.6;
     font-size: 1rem;
+}
+main article {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main article h1, main article h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Cormorant Garamond', serif; /* Fonte Garamond */
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+main article p, main article ul {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main article ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+main article li {
+    margin-bottom: 8px;
 }
 
 footer {
