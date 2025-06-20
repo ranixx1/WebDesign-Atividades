@@ -207,3 +207,48 @@ body {
     font-size: 22px;
 }
 
+
+.data-display-area p { /* Estilo para o parágrafo de simulação de dados */
+    text-align: center;
+    color: var(--text-light);
+    padding: 20px;
+}
+
+.table-placeholder {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    margin-top: 20px;
+}
+
+.table-placeholder h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: var(--border-light);
+    border-bottom: 1px solid var(--border-medium);
+}
+
+.table-placeholder table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-white);
+}
+
+.table-placeholder th,
+.table-placeholder td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-dark);
+    text-align: center;
+}
+
+.table-placeholder th {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: var(--border-light);
+}
