@@ -252,3 +252,53 @@ body {
     text-transform: uppercase;
     background-color: var(--border-light);
 }
+
+/* --- Footer (Nav-Bar) --- */
+.nav-bar {
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--bg-white);
+    padding: 15px 25px;
+    border-top: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); /* Mantido fixo */
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--radius-md);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999; /* Mantido fixo para o tom de cinza específico */
+    font-size: var(--font-size-sm);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 18px; 
+    border: none;
+    background: none;
+}
+
+.nav-item.active {
+    color: var(--primary-color);
+    background-color: rgba(106, 75, 138, 0.1);
+    transform: translateY(-5px);
+}
+
+.nav-item:hover {
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.nav-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-item span {
+    font-weight: 500;
+}
