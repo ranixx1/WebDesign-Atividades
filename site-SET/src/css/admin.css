@@ -302,3 +302,123 @@ body {
 .nav-item span {
     font-weight: 500;
 }
+
+/* --- Media Queries para Mobile (max-width: 768px) --- */
+@media (max-width: 768px) {
+    body {
+        padding: 0; /* Remove padding do body para mobile, a nav-bar é fixa */
+    }
+
+    /* Consolidado: Estilos para .chart-container e canvas mobile */
+    .chart-container {
+        height: 150px; /* Reduzido para mobile */
+        padding: 10px 15px 20px;
+        margin: 0 auto;
+        border-radius: var(--radius-sm);
+        background-color: var(--bg-white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    .chart-container canvas {
+        max-height: 100%; 
+        border-radius: var(--radius-sm);
+    }
+
+    .header {
+        padding: 16px 20px 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .user-info {
+        gap: 12px;
+    }
+
+    .profile {
+        width: 42px;
+        height: 42px;
+        font-size: var(--font-size-lg);
+    }
+
+    .greeting h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .greeting p {
+        font-size: 14px;
+    }
+
+    .actions {
+        gap: 15px;
+    }
+
+    .action-btn {
+        width: 38px;
+        height: 38px;
+        font-size: var(--font-size-lg);
+    }
+
+    .stock-section {
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        margin: 15px;
+    }
+
+    .chart-section .chart-title {
+        font-size: 17px;
+    }
+
+    .action-buttons {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .action-button {
+        padding: 18px 25px;
+        font-size: var(--font-size-md);
+        gap: 10px;
+    }
+
+    .action-button i {
+        font-size: var(--font-size-lg);
+    }
+
+    .nav-bar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-width: none;
+        border: none;
+        border-top: 1px solid var(--border-light);
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+        padding: 8px 12px;
+    }
+
+    .nav-item {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .nav-item i {
+        font-size: var(--font-size-xl);
+        margin-bottom: 3px;
+    }
+
+    /* Estilos para a tabela em si em mobile */
+    .table-placeholder table {
+        display: table;
+        white-space: normal;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .table-placeholder th,
+    .table-placeholder td {
+        min-width: 100px;
+        padding: 10px;
+        font-size: var(--font-size-sm);
+        white-space: normal;
+    }
+}
