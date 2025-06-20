@@ -46,4 +46,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
-})
+  
+    // Gráfico de Estoque por Produto
+    const ctxEstoque = document.getElementById('graficoEstoque')?.getContext('2d');
+    if (ctxEstoque) {
+      new Chart(ctxEstoque, {
+        type: 'doughnut',
+        data: {
+          labels: ['Regata Branca', 'Camiseta Preta', 'Calça Jeans'],
+          datasets: [{
+            label: 'Estoque',
+            data: [30, 45, 25],
+            backgroundColor: ['#8B5CF6', '#C084FC', '#E9D5FF'],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: {
+                  family: 'Poppins',
+                  size: 13
+                }
+              }
+            },
+            tooltip: {
+              titleFont: { size: 13, family: 'Poppins' },
+              bodyFont: { size: 12, family: 'Poppins' }
+            }
+          }
+        }
+      });
+    }
+  });
+  
