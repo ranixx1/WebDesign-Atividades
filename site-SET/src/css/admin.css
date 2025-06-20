@@ -125,3 +125,44 @@ body {
     transform: scale(0.95);
     background: #dcdcdc; 
 }
+
+.stock-section {
+    background: var(--bg-light);
+    border-radius: var(--radius-lg);
+    padding: 25px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.chart-section .chart-title,
+.data-display-area h2 { /* Consolidado: Ambos títulos tinham estilos semelhantes */
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 20px; 
+}
+
+/* --- Gráficos --- */
+.chart-container {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 240px;
+    object-fit: contain;
+    background-color: var(--bg-white);
+    border-radius: var(--radius-sm); 
+    box-shadow: var(--shadow-sm); 
+}
