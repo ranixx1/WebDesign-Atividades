@@ -96,3 +96,32 @@ body {
     font-size: var(--font-size-md);
     font-weight: 500;
 }
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.action-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: var(--radius-md);
+    background: var(--bg-light); 
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: var(--font-size-xl);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.action-btn:hover {
+    background: #eaeaea; 
+    transform: translateY(-2px);
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+    background: #dcdcdc; 
+}
