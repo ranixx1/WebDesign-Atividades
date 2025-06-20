@@ -27,6 +27,20 @@
                 </button>
             </section>
         </header>
+
+        <section class="stock-section chart-section">
+            <h2 class="chart-title">Vendas Semanais</h2>
+            <figure class="chart-container">
+              <canvas id="graficoVendas" height="160"></canvas>
+            </figure>
+          </section>
+      
+          <section class="stock-section chart-section">
+            <h2 class="chart-title">Estoque por Produto</h2>
+            <figure class="chart-container">
+              <canvas id="graficoEstoque" height="160"></canvas>
+            </figure>
+          </section>
         <section class="stock-section action-buttons">
             <button class="action-button">
                 <i class="fas fa-cash-register"></i>
@@ -117,6 +131,8 @@
             </nav>
         </footer>
     </main>
- 
+      <!-- Chart.js para simular graficos-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/src/js/grafico.js"></script>
 </body>
 </html>
