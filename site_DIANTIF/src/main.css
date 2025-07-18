@@ -74,6 +74,27 @@ h1 {
     padding: 1rem;
     text-align: center;
 }
+.card-top {
+    flex-grow: 1; /* Ocupa o espaço restante verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee; /* Linha divisória sutil */
+}
+
+.card-bottom {
+    flex-shrink: 0; /* Não encolhe */
+    height: 3rem; /* Altura fixa */
+    width:100%;
+    background-color: white; 
+    display: flex;
+    justify-content: space-around; /* Distribui os ícones horizontalmente */
+    align-items: center;
+    padding: 0;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
 
 .card a {
     color: purple;
@@ -81,13 +102,7 @@ h1 {
     font-size: 0.95rem;
 }
 
-.icons {
-    font-size: 1.2rem;
-    color: green;
-}
-
-.icons img {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+.card-bottom i {
+    color: #3c5f5f; 
+    font-size: 1.5rem; 
 }
