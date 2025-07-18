@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+#sidebar {
+    background-color: #3c5f5f;
+    color: white;
+    width: 220px;
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+}
+
+#sidebar h2 {
+    margin-bottom: 2rem;
+}
+
+#sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+main {
+    margin-left: 220px;
+    padding: 2rem;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+header form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user {
+    font-weight: bold;
+    color: purple;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 240px;
+    height: 228px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card a {
+    color: purple;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.icons {
+    font-size: 1.2rem;
+    color: green;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
