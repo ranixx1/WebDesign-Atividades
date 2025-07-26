@@ -196,3 +196,41 @@ html {
     padding: 1rem;
     font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        aspect-ratio: auto;
+        height: auto;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center top;
+        filter: grayscale(100%);
+    }
+
+    .foto span {
+        position: static;
+        background: linear-gradient(to left, #7292A6, #224459);
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+        display: block;
+        font-size: 1rem;
+    }
+}
