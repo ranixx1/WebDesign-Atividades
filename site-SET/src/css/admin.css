@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Consolidado: A fonte Poppins é a principal, outras são fallbacks. */
     font-family: 'Poppins', -apple-system, BlinkMacMacFont, sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
@@ -114,7 +113,7 @@ body {
 }
 
 .chart-section .chart-title,
-.data-display-area h2 { /* Consolidado: Ambos títulos tinham estilos semelhantes */
+.data-display-area h2 {
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--text-dark);
@@ -184,7 +183,7 @@ body {
 }
 
 
-.data-display-area p { /* Estilo para o parágrafo de simulação de dados */
+.data-display-area p { 
     text-align: center;
     color: var(--text-light);
     padding: 20px;
@@ -238,7 +237,7 @@ body {
     border-top: 1px solid var(--border-light);
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); /* Mantido fixo */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); 
     border: 1px solid var(--secondary-color);
     border-radius: var(--radius-md);
     margin-top: 30px;
@@ -249,7 +248,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #999; /* Mantido fixo para o tom de cinza específico */
+    color: #999;
     font-size: var(--font-size-sm);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -279,13 +278,13 @@ body {
     font-weight: 500;
 }
 
-/* --- Media Queries para Mobile (max-width: 768px) --- */
+/* Intenção principal foi fazer para mobile*/
+/* --- Media Queries para Mobile (max-width: 768px) ---*/
 @media (max-width: 768px) {
     body {
         padding: 0; /* Remove padding do body para mobile, a nav-bar é fixa */
     }
 
-    /* Consolidado: Estilos para .chart-container e canvas mobile */
     .chart-container {
         height: 150px; /* Reduzido para mobile */
         padding: 10px 15px 20px;
