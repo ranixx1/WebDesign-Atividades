@@ -79,10 +79,8 @@ input {
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
     background: #fff;
-    /* Fundo sólido para contraste */
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    /* Sombra leve */
 
 }
 
