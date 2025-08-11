@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,29 @@
     <link rel="stylesheet" href="./src/css/variables.css">
     <title>Document</title>
 </head>
+
 <body>
-    <main class="login-container">
-        <section class="form-login">
-            <div>
-                <form action="#" method="post">
-                    <label for="email">E-mail</label>
-                    <label type="email" id="email" placehoder="Digite seu e-mail"required></label>
+    <main>
+        <div class="logo">
+            <img src="./media/logo.png" alt="">
 
-                     <label for="password">Senha</label>
-                    <label type="password" id="senha" placehoder="Digite sua senha"required></label>
+        </div>
 
-                    <button type="submit">Entrar</button>
-                    
-                </form>
-            </div>
-        </section>
+        <form action="#" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <div class="extra-links">
+            <a href="#">Esqueci minha senha</a>
+        </div>
+        </div>
     </main>
 </body>
+
 </html>
