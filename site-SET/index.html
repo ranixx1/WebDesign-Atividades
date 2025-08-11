@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 </head>
+
 <body>
     <main class="main-container">
         <header>
@@ -31,16 +33,16 @@
         <section class="stock-section chart-section">
             <h2 class="chart-title">Vendas Semanais</h2>
             <figure class="chart-container">
-              <canvas id="graficoVendas" height="160"></canvas>
+                <canvas id="graficoVendas" height="160"></canvas>
             </figure>
-          </section>
-      
-          <section class="stock-section chart-section">
+        </section>
+
+        <section class="stock-section chart-section">
             <h2 class="chart-title">Estoque por Produto</h2>
             <figure class="chart-container">
-              <canvas id="graficoEstoque" height="160"></canvas>
+                <canvas id="graficoEstoque" height="160"></canvas>
             </figure>
-          </section>
+        </section>
         <section class="stock-section action-buttons">
             <button class="action-button">
                 <i class="fas fa-cash-register"></i>
@@ -75,7 +77,7 @@
                 Atualizar Gráficos
             </button>
         </section>
-            
+
         <section class="stock-section data-display-area">
             <h2>Dados da API:</h2>
             <p style="text-align: center; color: #888; padding: 20px;">
@@ -105,6 +107,18 @@
                             <td>75</td>
                             <td>R$ 49,90</td>
                         </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Produto C</td>
+                            <td>95</td>
+                            <td>R$ 59,90</td>
+                        </tr>
+                         <tr>
+                            <td>4</td>
+                            <td>Produto D</td>
+                            <td>105</td>
+                            <td>R$ 99,90</td>
+                        </tr>
                     </tbody>
                 </table>
             </article>
@@ -131,8 +145,9 @@
             </nav>
         </footer>
     </main>
-      <!-- Chart.js para simular graficos-->
+    <!-- Chart.js para simular graficos-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="src/js/grafico.js"></script>
 </body>
+
 </html>
