@@ -33,7 +33,7 @@
                     <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
                 </div>
             </div>
-            <button type="submit">Entrar</button>
+            <button onclick="redirecionar()">Entrar</button>
         </form>
 
         <div class="extra-links">
@@ -41,6 +41,11 @@
         </div>
         </div>
     </main>
+    <script>
+        function redirecionar() {
+            window.location.href = "http://127.0.0.1:5500/site-SET/index.html"
+        }
+    </script>
 </body>
 
 </html>
