@@ -92,6 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 function redirecionar() {
-    window.location.href = 'http://127.0.0.1:5500/site-SET/login.html';
+    window.location.href = 'https://web-design-atividades.vercel.app/site-SET/login.html';
 }
 
