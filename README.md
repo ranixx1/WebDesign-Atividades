@@ -1,5 +1,6 @@
-# WebDesign-Atividades
+# <center> WebDesign-Atividades
 
+<center>
 <h2>Site raw</h2>
 
 ```
