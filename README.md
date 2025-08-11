@@ -1,34 +1,43 @@
 # WebDesign-Atividades
 
-```
-1- site RAW: https://web-design-atividades.vercel.app/site-raw/index.html
+<h2>Site raw</h2>
 
 ```
+https://web-design-atividades.vercel.app/site-raw/index.html
 
 ```
-2- Sistema de estoque : https://web-design-atividades.vercel.app/site-SET/index.html
+<h2>SET</h2>
 
 ```
+https://web-design-atividades.vercel.app/site-SET/index.html
 
 ```
-3- Site modelo: https://web-design-atividades.vercel.app/site-modelo/index.html
+<h2>Site-modelo</h2>
 
 ```
+https://web-design-atividades.vercel.app/site-modelo/index.html
 
 ```
-4- Site Amazon: https://web-design-atividades.vercel.app/site-amazon/index.html
+<h2>Template Amazon</h2>
+
 
 ```
+https://web-design-atividades.vercel.app/site-amazon/index.html
 
 ```
-5- Site Amazon: https://web-design-atividades.vercel.app/site-DIANTIF/index.html
-```
+<h2>DIANTIF</h2>
 
 ```
-6- Site Grid: https://web-design-atividades.vercel.app/Grid/index.html
+https://web-design-atividades.vercel.app/site-DIANTIF/index.html
+```
+<h2>GRID template</h2>
 
 ```
+https://web-design-atividades.vercel.app/Grid/index.html
 
 ```
-7- Site Menu-Submenu: https://web-design-atividades.vercel.app/Menu-Submenu/index.html
+<h2>Menu-SUBMENU</h2>
+
+```
+https://web-design-atividades.vercel.app/Menu-Submenu/index.html
 ```
