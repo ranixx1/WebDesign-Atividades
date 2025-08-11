@@ -30,7 +30,7 @@ body {
 }
 
 /* --- Header --- */
-.header {
+header {
     padding: 25px 30px;
     background-color: var(--bg-white);
     display: flex;
