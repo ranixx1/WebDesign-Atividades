@@ -81,7 +81,7 @@ header {
     width: 45px;
     height: 45px;
     border-radius: var(--radius-md);
-    background: var(--bg-light); 
+    background: var(--bg-light);
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
@@ -92,13 +92,13 @@ header {
 }
 
 .action-btn:hover {
-    background: #eaeaea; 
+    background: #eaeaea;
     transform: translateY(-2px);
 }
 
 .action-btn:active {
     transform: scale(0.95);
-    background: #dcdcdc; 
+    background: #dcdcdc;
 }
 
 .stock-section {
@@ -117,7 +117,7 @@ header {
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 /* --- Gráficos --- */
@@ -138,8 +138,8 @@ header {
     max-height: 240px;
     object-fit: contain;
     background-color: var(--bg-white);
-    border-radius: var(--radius-sm); 
-    box-shadow: var(--shadow-sm); 
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
 }
 
 /* --- Botões de Ação --- */
@@ -183,7 +183,7 @@ header {
 }
 
 
-.data-display-area p { 
+.data-display-area p {
     text-align: center;
     color: var(--text-light);
     padding: 20px;
@@ -237,7 +237,7 @@ header {
     border-top: 1px solid var(--border-light);
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--secondary-color);
     border-radius: var(--radius-md);
     margin-top: 30px;
@@ -253,7 +253,7 @@ header {
     transition: all 0.3s ease;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 18px; 
+    border-radius: 18px;
     border: none;
     background: none;
 }
@@ -282,11 +282,13 @@ header {
 /* --- Media Queries para Mobile (max-width: 768px) ---*/
 @media (max-width: 768px) {
     body {
-        padding: 0; /* Remove padding do body para mobile, a nav-bar é fixa */
+        padding: 0;
+        /* Remove padding do body para mobile, a nav-bar é fixa */
     }
 
     .chart-container {
-        height: 150px; /* Reduzido para mobile */
+        height: 150px;
+        /* Reduzido para mobile */
         padding: 10px 15px 20px;
         margin: 0 auto;
         border-radius: var(--radius-sm);
@@ -295,7 +297,7 @@ header {
     }
 
     .chart-container canvas {
-        max-height: 100%; 
+        max-height: 100%;
         border-radius: var(--radius-sm);
     }
 
@@ -396,10 +398,4 @@ header {
         font-size: var(--font-size-sm);
         white-space: normal;
     }
-}
-section.form-login{
-    border: 4px solid var(--primary-color);
-    justify-content:center;
-    align-items:center;
-    display:flex
 }
