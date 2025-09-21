@@ -6,32 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/login.css">
     <link rel="stylesheet" href="./src/css/variables.css">
-    <title>Document</title>
+    <title>Validação de Código</title>
 </head>
 
 <body>
     <main>
         <div class="logo">
-            <img src="./media/logo.png" alt="">
-
+            <img src="./media/logo.png" alt="Logo">
         </div>
 
         <form id="loginForm">
-            <div class="input-group floating-label">
-                <div class="input-wrapper">
-                    <i class="fas fa-envelope"></i>
-                    <input type="code" id="code" name="código" placeholder=" " required>
-                    <label for="email">Código</label>
-                </div>
+            <div class="code-container">
+                
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
+
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
+
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
+
+                <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
+
             </div>
-            <button onclick="redirecionar()">validar código</button>
+            <button type="submit">Validar Código</button>
+            <p id="error-message" style="color: red; display: none; margin-top: 10px;">Código inválido!</p>
         </form>
-        </div>
     </main>
+
     <script>
-        function redirecionar() {
-            window.location.href = "https://web-design-atividades.vercel.app/site-SET/login.html"
-        }
+        const inputs = document.querySelectorAll(".code-input");
+        const form = document.getElementById("loginForm");
+        const errorMsg = document.getElementById("error-message");
+
+        // Auto-foco entre inputs
+        inputs.forEach((input, index) => {
+            input.addEventListener("input", () => {
+                if (input.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+
+            // Backspace inteligente
+            input.addEventListener("keydown", (e) => {
+                if (e.key === "Backspace" && input.value === "" && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+
+        // Validação do código
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const code = Array.from(inputs).map(input => input.value).join("");
+            const correctCode = "1234"; // 👉 Pode vir do backend no futuro
+
+            if (code === correctCode) {
+                window.location.href = "https://web-design-atividades.vercel.app/site-SET/login.html";
+            } else {
+                errorMsg.style.display = "block";
+                inputs.forEach(input => input.value = "");
+                inputs[0].focus();
+            }
+        });
     </script>
 </body>
 
