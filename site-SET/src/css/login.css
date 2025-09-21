@@ -144,12 +144,140 @@ button:hover {
     text-decoration: underline;
 }
 
+.code-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 1.5rem 0;
+}
+
+/* Inputs individuais do código */
+.code-input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Foco no input */
+.code-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+}
+
+/* Botão de validação */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.85rem;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Mensagem de erro */
+#error-message {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    color: #e63946;
+    /* vermelho de erro */
+}
+
+/* Responsividade */
+.code-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 1.5rem 0 4rem;
+
+}
+
+/* Inputs individuais do código */
+.code-input {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 2px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    padding:0;
+}
+
+/* Foco no input */
+.code-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+}
+
+/* Botão de validação */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.85rem;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Mensagem de erro */
+#error-message {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    font-weight: 500;
+    color: #e63946;
+    /* vermelho de erro */
+}
+
 /* Responsividade */
 @media (max-width: 480px) {
     .login-container {
         margin: 0 1rem;
         padding: 1.5rem;
+
     }
+}
+
+.code-input {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
 }
 
 .floating-label {
