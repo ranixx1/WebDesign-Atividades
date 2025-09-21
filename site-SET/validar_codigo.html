@@ -17,7 +17,7 @@
 
         <form id="loginForm">
             <div class="code-container">
-                
+
                 <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
 
                 <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
@@ -61,7 +61,7 @@
             const correctCode = "1234"; // 👉 Pode vir do backend no futuro
 
             if (code === correctCode) {
-                window.location.href = "https://web-design-atividades.vercel.app/site-SET/login.html";
+                window.location.href = "https://web-design-atividades.vercel.app/site-SET/new_password.html";
             } else {
                 errorMsg.style.display = "block";
                 inputs.forEach(input => input.value = "");
