@@ -1,44 +1,16 @@
-# <center> WebDesign-Atividades
+# WebDesign-Atividades
 
-<center>
-<h2>Site raw</h2>
+## Sites publicados
 
-```
-https://web-design-atividades.vercel.app/site-raw/index.html
+- **[Site raw](https://web-design-atividades.vercel.app/site-raw/index.html)**
+- **[SET](https://web-design-atividades.vercel.app/site-SET/index.html)**
+- **[Site-modelo](https://web-design-atividades.vercel.app/site-modelo/index.html)**
+- **[Template Amazon](https://web-design-atividades.vercel.app/site-amazon/index.html)**
+- **[DIANTIF](https://web-design-atividades.vercel.app/site-DIANTIF/index.html)**
+- **[GRID template](https://web-design-atividades.vercel.app/Grid/index.html)**
+- **[Menu-SUBMENU](https://web-design-atividades.vercel.app/Menu-Submenu/index.html)**
 
-```
-<h2>SET</h2>
+---
 
-```
-https://web-design-atividades.vercel.app/site-SET/index.html
-
-```
-<h2>Site-modelo</h2>
-
-```
-https://web-design-atividades.vercel.app/site-modelo/index.html
-
-```
-<h2>Template Amazon</h2>
-
-
-```
-https://web-design-atividades.vercel.app/site-amazon/index.html
-
-```
-<h2>DIANTIF</h2>
-
-```
-https://web-design-atividades.vercel.app/site-DIANTIF/index.html
-```
-<h2>GRID template</h2>
-
-```
-https://web-design-atividades.vercel.app/Grid/index.html
-
-```
-<h2>Menu-SUBMENU</h2>
-
-```
-https://web-design-atividades.vercel.app/Menu-Submenu/index.html
-```
+Cada link acima leva diretamente ao site correspondente publicado via Vercel.  
+Sinta-se à vontade para explorar os exemplos e templates criados no contexto das atividades de Web Design.
