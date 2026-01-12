@@ -1,0 +1,40 @@
+{
+  "login_title": "Login",
+  "register_title": "Create Account",
+  "email": "Email",
+  "password": "Password",
+  "confirm_password": "Confirm Password",
+  "name": "Name",
+  "forgot_password": "Forgot my password",
+  "change_password" : "Change password",
+  "enter": "Enter",
+  "create_account": "Create account",
+
+  "hello_admin": "Hello, Admin!",
+  "weekly_sales": "Weekly Sales",
+  "stock_by_product": "Stock by Product",
+  "register_sale": "Register Sale",
+  "list_sales": "List Sales",
+  "list_products": "List Products",
+  "register_product": "Register Product",
+  "manage_products": "Manage Products",
+  "list_costumers" : " List Costumers",
+  "reports": "Reports",
+  "update_charts": "Update Charts",
+  "home": "Home",
+  "charts": "Charts",
+  "stock": "Stock",
+  "profile": "Profile",
+  "data": "Data",
+  "example": "Example",
+  "price" : "Price",
+  "simulation": "Simulation",
+
+
+
+  "verify_code" : "Verify code",
+  "invalid_code": "Invalid Code",
+
+
+  "recover": "Recover"
+}

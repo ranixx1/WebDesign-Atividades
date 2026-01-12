@@ -392,3 +392,14 @@ header {
         white-space: normal;
     }
 }
+.lang-btn {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.lang-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

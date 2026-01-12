@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/login.css">
     <link rel="stylesheet" href="./src/css/variables.css">
-    <title>Validação de Código</title>
+    <title>SET</title>
 </head>
 
 <body>
+    <button class="lang-btn-fixed" onclick="toggleLanguage()">
+        <span class="lang-label">EN</span>
+    </button>
     <main>
         <div class="logo">
             <img src="./media/logo.png" alt="Logo">
@@ -27,11 +30,12 @@
                 <input type="text" maxlength="1" class="code-input" inputmode="numeric" pattern="[0-9]*" required>
 
             </div>
-            <button type="submit">Validar Código</button>
-            <p id="error-message" style="color: red; display: none; margin-top: 10px;">Código inválido!</p>
+            <button data-i18n="verify_code" type="submit">Validar Código</button>
+            <p data-i18n="invalid_code" id="error-message" style="color: red; display: none; margin-top: 10px;">Código
+                inválido!</p>
         </form>
     </main>
-
+    <script src="src/js/i18n.js"></script>
     <script>
         const inputs = document.querySelectorAll(".code-input");
         const form = document.getElementById("loginForm");

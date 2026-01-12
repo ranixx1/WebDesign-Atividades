@@ -1,0 +1,41 @@
+{
+  "login_title": "Entrar",
+  "register_title": "Criar Conta",
+  "email": "Email",
+  "password": "Senha",
+  "confirm_password": "Confirmar Senha",
+  "name": "Nome",
+  "forgot_password": "Esqueci minha senha",
+  "change_password": "Alterar senha",
+  "enter": "Entrar",
+  "create_account": "Criar conta",
+
+  "hello_admin": "Olá, Admin!",
+  "weekly_sales": "Vendas Semanais",
+  "stock_by_product": "Estoque por Produto",
+  "register_sale": "Registrar Venda",
+  "list_sales": "Listar Vendas",
+  "list_products": "Listar Produtos",
+  "register_product": "Cadastrar Produto",
+  "manage_products": "Gerenciar Produtos",
+  "list_costumers" : "Listar Clientes",
+  "reports": "Relatórios",
+  "update_charts" : "Atualizar graficos",
+  "home": "Início",
+  "charts": "Gráficos",
+  "stock": "Estoque",
+  "profile": "Perfil",
+  "data" : "Dados",
+  "example": "Exemplo",
+  "price": "Preço",
+  "simulation" : "Simulação",
+
+
+  "verify_code": "Verificar Código",
+  "invalid_code": "Código Inválido",
+
+  "recover": "Recuperar"
+
+
+
+}

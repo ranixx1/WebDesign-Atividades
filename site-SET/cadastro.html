@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/login.css">
     <link rel="stylesheet" href="./src/css/variables.css">
-    <title>Document</title>
+    <title>SET</title>
 </head>
+<script src="./src/js/i18n.js"></script>
 
 <body>
+    <button class="lang-btn-fixed" onclick="toggleLanguage()">
+        <span class="lang-label">EN</span>
+    </button>
     <main>
         <div class="logo">
             <img src="./media/logo.png" alt="">
@@ -21,21 +25,21 @@
                 <div class="input-wrapper">
                     <i class="fas fa-envelope"></i>
                     <input type="email" id="email" name="email" required>
-                    <label for="email">Email</label>
+                    <label data-i18n="email" for="email">Email</label>
                 </div>
             </div>
             <div class="input-group floating-label">
                 <div class="input-wrapper">
                     <i class="fas fa-lock"></i>
                     <input type="name" id="nome" name="nome" required>
-                    <label for="name">Nome</label>
+                    <label data-i18n="name" for="name">Nome</label>
                 </div>
             </div>
             <div class="input-group floating-label">
                 <div class="input-wrapper">
                     <i class="fas fa-lock"></i>
                     <input type="password" id="senha" name="senha" required>
-                    <label for="senha">Senha</label>
+                    <label data-i18n="password" for="senha">Senha</label>
                     <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
                 </div>
             </div>
@@ -43,11 +47,11 @@
                 <div class="input-wrapper">
                     <i class="fas fa-lock"></i>
                     <input type="password" id="senha" name="senha" required>
-                    <label for="senha">Confirmar Senha</label>
+                    <label data-i18n="confirm_password" for="senha">Confirmar Senha</label>
                     <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
                 </div>
             </div>
-            <button onclick="redirecionar()">Entrar</button>
+            <button data-i18n="enter" onclick="redirecionar()">Entrar</button>
         </form>
         </div>
     </main>

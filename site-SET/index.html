@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Estoque e Vendas</title>
+    <title>SET</title>
     <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 </head>
+<script src="src/js/i18n.js"></script>
 
 <body>
     <main class="main-container">
@@ -17,15 +18,15 @@
             <section class="user-info">
                 <img src="./media/logo.png" class="profile"></p>
                 <section class="greeting">
-                    <h1>Olá, Admin!</h1>
+                    <h1 data-i18n="hello_admin">!</h1>
                 </section>
             </section>
             <section class="actions">
                 <button class="action-btn">
                     <i class="fas fa-search"></i>
                 </button>
-                <button class="action-btn">
-                    <i class="fas fa-bell"></i>
+                <button class="action-btn lang-btn" onclick="toggleLanguage()" title="Mudar idioma">
+                    <span class="lang-label">PT</span>
                 </button>
                 <button onclick="redirecionar()" class="action-btn">
                     <i class="fas fa-sign-out-alt"></i>
@@ -34,14 +35,14 @@
         </header>
 
         <section class="stock-section chart-section">
-            <h2 class="chart-title">Vendas Semanais</h2>
+            <h2 data-i18n="weekly_sales" class="chart-title"> </h2>
             <figure class="chart-container">
                 <canvas id="graficoVendas" height="160"></canvas>
             </figure>
         </section>
 
         <section class="stock-section chart-section">
-            <h2 class="chart-title">Estoque por Produto</h2>
+            <h2 data-i18n="stock_by_product" class="chart-title"></h2>
             <figure class="chart-container">
                 <canvas id="graficoEstoque" height="160"></canvas>
             </figure>
@@ -49,52 +50,51 @@
         <section class="stock-section action-buttons">
             <button class="action-button">
                 <i class="fas fa-cash-register"></i>
-                Registrar Venda
+                <span data-i18n="register_sale"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-receipt"></i>
-                Listar Vendas
+                <span data-i18n="list_sales"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-boxes"></i>
-                Listar Produtos
+                <span data-i18n="list_products"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-box"></i>
-                Cadastrar Produto
+                <span data-i18n="register_product"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-edit"></i>
-                Gerenciar Produtos
+                <span data-i18n="manage_products"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-users"></i>
-                Listar Clientes
+                <span data-i18n="list_costumers"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-chart-line"></i>
-                Relatórios
+                <span data-i18n="reports"></span>
             </button>
             <button class="action-button">
                 <i class="fas fa-sync-alt"></i>
-                Atualizar Gráficos
+                <span data-i18n="update_charts"></span>
             </button>
         </section>
 
         <section class="stock-section data-display-area">
-            <h2>Dados da API:</h2>
-            <p style="text-align: center; color: #888; padding: 20px;">
-                Simulação de dados
+            <h2 data-i18n="data">:</h2>
+            <p data-i18n="simulation" style="text-align: center; color: #888; padding: 20px;">
             </p>
             <article class="table-placeholder">
-                <h3>Exemplo de Tabela de Produtos</h3>
+                <h3 data-i18n="example"></h3>
                 <table>
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Nome</th>
-                            <th>Estoque</th>
-                            <th>Preço Venda</th>
+                            <th data-i18n="name"></th>
+                            <th data-i18n="stock"></th>
+                            <th data-i18n="price"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -126,24 +126,23 @@
                 </table>
             </article>
         </section>
-
         <footer>
             <nav class="nav-bar">
                 <button class="nav-item active">
                     <i class="fas fa-home"></i>
-                    <span>Início</span>
+                    <span data-i18n="home"></span>
                 </button>
                 <button class="nav-item">
                     <i class="fas fa-chart-bar"></i>
-                    <span>Gráficos</span>
+                    <span data-i18n="charts"></span>
                 </button>
                 <button class="nav-item">
                     <i class="fas fa-boxes"></i>
-                    <span>Estoque</span>
+                    <span data-i18n="stock"></span>
                 </button>
                 <button class="nav-item">
                     <i class="far fa-user"></i>
-                    <span>Perfil</span>
+                    <span data-i18n="profile"></span>
                 </button>
             </nav>
         </footer>

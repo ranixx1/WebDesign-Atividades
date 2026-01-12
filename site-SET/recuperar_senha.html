@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/login.css">
     <link rel="stylesheet" href="./src/css/variables.css">
-    <title>Document</title>
+    <title>SET</title>
 </head>
 
 <body>
+    <button class="lang-btn-fixed" onclick="toggleLanguage()">
+        <span class="lang-label">EN</span>
+    </button>
     <main>
         <div class="logo">
             <img src="./media/logo.png" alt="">
@@ -21,10 +24,10 @@
                 <div class="input-wrapper">
                     <i class="fas fa-envelope"></i>
                     <input type="email" id="email" name="email" placeholder=" " required>
-                    <label for="email">Email</label>
+                    <label data_i18n="email" for="email"></label>
                 </div>
             </div>
-            <button onclick="redirecionar()">Recuperar</button>
+            <button data-i18n="recover" onclick="redirecionar()">Recuperar</button>
 
         </form>
         </div>
@@ -35,5 +38,6 @@
         }
     </script>
 </body>
+<script src="src/js/i18n.js"></script>
 
 </html>
