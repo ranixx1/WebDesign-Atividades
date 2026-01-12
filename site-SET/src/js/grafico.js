@@ -94,4 +94,3 @@ document.addEventListener('DOMContentLoaded', () => {
 function redirecionar() {
     window.location.href = 'https://web-design-atividades.vercel.app/site-SET/login.html';
 }
-
